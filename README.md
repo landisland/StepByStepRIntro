@@ -1,7 +1,8 @@
 # Step by step R intro tutorial with detailed comments
 
 The content is from *An Introduction to Statistical Learning with Application* in R (ISLR2). 
-You can download the ebook [here](https://hastie.su.domains/ISLR2/ISLRv2_website.pdf)
+
+You can download the ebook [here](https://hastie.su.domains/ISLR2/ISLRv2_website.pdf).
 
 * linear regression
 	* how to use lm() function to do
