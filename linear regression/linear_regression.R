@@ -24,6 +24,17 @@ model <- lm(medv ~ lstat)
 # summary() function can give us detailed information about our model
 summary(model)
 
+# how to read summary() results
+# Residuals: The section summarizes the residuals, the error between the prediction of the model and the actual results.  Smaller residuals are better.
+# Coefficients: For each variable and the intercept, a weight is produced and that weight has other attributes like the standard error, a t-test value and significance.
+# Estimate: This is the weight given to the variable.  In the simple regression case (one variable plus the intercept), for every one dollar increase in Spend, the model predicts an increase of $10.6222.
+# Std. Error: Tells you how precisely was the estimate measured.  It’s really only useful for calculating the t-value.
+# t-value and Pr(>[t]): The t-value is calculated by taking the coefficient divided by the Std. Error.  It is then used to test whether or not the coefficient is significantly different from zero.  If it isn’t significant, then the coefficient really isn’t adding anything to the model and could be dropped or investigated further.  Pr(>|t|) is the significance level.
+# Performance Measures: Three sets of measurements are provided.
+# Residual Standard Error: This is the standard deviation of the residuals.  Smaller is better.
+# Multiple / Adjusted R-Square: For one variable, the distinction doesn’t really matter.  R-squared shows the amount of variance explained by the model.  Adjusted R-Square takes into account the number of variables and is most useful for multiple-regression.
+# F-Statistic: The F-test checks if at least one variable’s weight is significantly different than zero.  This is a global test to help asses a model.  If the p-value is not significant (e.g. greater than 0.05) than your model is essentially not doing anything.
+
 # we can use names() function to find out what information are stored in model
 names(model)
 
