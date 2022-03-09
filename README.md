@@ -4,6 +4,7 @@ The content is from *An Introduction to Statistical Learning with Application* i
 
 You can download the ebook [here](https://hastie.su.domains/ISLR2/ISLRv2_website.pdf).
 
+
 * linear regression (Chapter 3)
 	* how to use lm() function to do
 		* simple linear regression
@@ -23,3 +24,4 @@ You can download the ebook [here](https://hastie.su.domains/ISLR2/ISLRv2_website
 		* leverage
 	* collinearlity check using vif() funciton
 	* write customize function
+	
